@@ -70,18 +70,29 @@ ul{
 }
 /* end flex utilities */
 
+/* header */
 header{
     background-color: var(--color-black);
     color: white;
-    /* position: fixed; */
     width: 100%;
     height: 60px;
     z-index: 1001;
 }
+header>div span{
+    padding: 5px;
+    background-color: rgba(128, 128, 128, 0.542);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+/* main section */
 #main{
-    height: calc(100% - 140px);
+    height: calc(100vh - 140px);
     background-color: var(--color-black);
     color: white;
+    padding: 0 130px;
+    overflow-y: auto;
 
 }
 .tile{
@@ -102,22 +113,15 @@ header{
     position: absolute;
     bottom: 5px;
     left: 5px;
-    padding: 5px;
-    
+    padding: 5px;    
 }
+
+/* footer */
 footer{
     background-color: var(--color-footer);
     color: white;
     height: 80px;
 }
-header>div span{
-    padding: 5px;
-    background-color: rgba(128, 128, 128, 0.542);
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-right: 5px;
-}
-
 .button{
     padding: 7px;
 }
@@ -126,7 +130,6 @@ header>div span{
     text-align: center;
     padding: 5px;
 }
-
 .share{
     color: var(--color-green-share);
 }
