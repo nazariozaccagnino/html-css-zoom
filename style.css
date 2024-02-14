@@ -1,0 +1,97 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utilities */
+ul{
+    list-style: none;
+}
+.debug{
+    border: 1px solid red;
+}
+:root {
+	--color-black: #000000;
+	--color-footer: #222222;
+	--color-green-share: #49c302;
+	--color-red-endmeeting: #cf1f22;
+}
+
+/* flex utilities */
+.d-flex{
+    display: flex;
+}
+.no-flex{
+    display: block;
+}
+.align-items-center{
+    align-items: center;
+    align-content: center;
+}
+.column{
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+.justify-start{
+    justify-content: flex-start;
+}
+.justify-space-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-flexend{
+    justify-content: flex-end;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.align-baseline{
+    align-items: baseline;
+}
+.space-around{
+    justify-content: space-around;
+}
+.align-flex-start{
+    align-items: flex-start;
+}
+/* end flex utilities */
+
+header{
+    background-color: var(--color-black);
+    color: white;
+    /* position: fixed; */
+    width: 100%;
+    height: 30px;
+}
+#main{
+    height: calc(100% - 100px);
+    padding: 20px;
+    background-color: var(--color-black);
+    color: white;
+}
+.tile{
+    background-color: var(--color-green-share);
+    border: 1px solid red;
+    width: calc(100% / 7);
+    aspect-ratio: 16 / 9;
+}
+.tile img{
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
+    height: auto;
+    display: block;    
+}
+footer{
+    background-color: var(--color-footer);
+    color: white;
+    height: 70px;
+}
