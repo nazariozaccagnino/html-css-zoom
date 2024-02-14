@@ -75,32 +75,33 @@ header{
     color: white;
     /* position: fixed; */
     width: 100%;
-    height: 30px;
+    height: 60px;
+    z-index: 1001;
 }
 #main{
-    height: calc(100% - 100px);
-    padding: 20px;
+    height: calc(100% - 130px);
     background-color: var(--color-black);
     color: white;
+
 }
 .tile{
-    background-color: var(--color-green-share);
-    border: 1px solid red;
     width: calc(100% / 7);
     aspect-ratio: 16 / 9;
     position: relative;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 .tile img{
     aspect-ratio: 16 / 9;
     max-width: 100%;
-    height: auto;
+    height: 100%;
     display: block;    
 }
 .badge{
     background-color: rgba(128, 128, 128, 0.542);
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 5px;
+    left: 5px;
     padding: 5px;
     
 }
@@ -108,4 +109,17 @@ footer{
     background-color: var(--color-footer);
     color: white;
     height: 70px;
+}
+header>div span{
+    padding: 5px;
+    background-color: rgba(128, 128, 128, 0.542);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.icon{
+    font-size: 30px;
+}
+.caret{
+    vertical-align: center;
 }
