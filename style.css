@@ -6,6 +6,11 @@
 }
 
 /* utilities */
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 ul{
     list-style: none;
 }
@@ -83,12 +88,21 @@ header{
     border: 1px solid red;
     width: calc(100% / 7);
     aspect-ratio: 16 / 9;
+    position: relative;
 }
 .tile img{
     aspect-ratio: 16 / 9;
     max-width: 100%;
     height: auto;
     display: block;    
+}
+.badge{
+    background-color: rgba(128, 128, 128, 0.542);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    
 }
 footer{
     background-color: var(--color-footer);
